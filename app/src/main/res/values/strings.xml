@@ -26,5 +26,12 @@
     <string name="upload_nanti">Upload Nanti</string>
     <string name="idr">IDR 200.000</string>
     <string name="coming_soon">COMING SOON</string>
+    <string name="avenger_invinity">Avenger: Infinity War</string>
+    <string name="action_scyi_fi_kids">Action, Sci-Fi, Kids</string>
+    <string name="storyboard">Storyboard</string>
+    <string name="whoplayer">Who Player</string>
+    <string name="pilihbangku">Pilih Bangku</string>
+    <string name="storyboard_desc">It is a long established fact that a reader will be distracted by \nthe readable content of a page when looking at its layout. \nThe point of using Lorem Ipsum is that it has a more-or-less normal \ndistribution of letters, as opposed to using 'Content here, \ncontent here', making it look like readable English.</string>
+    <string name="image">TODO</string>
 
 </resources>
