@@ -8,5 +8,12 @@
     <string name="pre_sale_desc">Tidak khawatir ketinggalan \nupdate film terbaru</string>
     <string name="cashless">Cashless</string>
     <string name="chasless_desc">Gunakan E-wallet untuk \ntransaksi nonton</string>
+    <string name="username">Username</string>
+    <string name="masukkan_esername">Masukkan Username Anda</string>
+    <string name="sing_in">Login</string>
+    <string name="password">Password</string>
+    <string name="masukkan_password">Masukkan Password Anda</string>
+    <string name="masuk_akun">Masuk Akun</string>
+    <string name="daftar_akun">Daftar Akun Baru</string>
 
 </resources>
