@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BWAMov">
         <activity
+            android:name=".ui.authentication.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.authentication.LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.onboarding.OnboardingThreeActivity"
             android:exported="false" />
         <activity
