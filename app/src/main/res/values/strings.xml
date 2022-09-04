@@ -9,11 +9,20 @@
     <string name="cashless">Cashless</string>
     <string name="chasless_desc">Gunakan E-wallet untuk \ntransaksi nonton</string>
     <string name="username">Username</string>
-    <string name="masukkan_esername">Masukkan Username Anda</string>
+    <string name="masukkan_esername">iqbal tamrin</string>
     <string name="sing_in">Login</string>
     <string name="password">Password</string>
-    <string name="masukkan_password">Masukkan Password Anda</string>
+    <string name="masukkan_password">Fais@l1234</string>
     <string name="masuk_akun">Masuk Akun</string>
     <string name="daftar_akun">Daftar Akun Baru</string>
+    <string name="signup">SignUp</string>
+    <string name="nama">Nama</string>
+    <string name="masukkan_nama_anda">iqbal tamrin</string>
+    <string name="email_address">Email Address</string>
+    <string name="masukkan_email_anda">iqbalthamrin200@gmail.com</string>
+    <string name="photo">Photo</string>
+    <string name="welcome">Welcome, \n Iqbal Tamrin</string>
+    <string name="simpan_dan_lanjutkan">Simpan Dan Lanjutkan</string>
+    <string name="upload_nanti">Upload Nanti</string>
 
 </resources>
