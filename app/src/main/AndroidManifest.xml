@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BWAMov">
         <activity
+            android:name=".ui.homePage.HomePageActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.authentication.RegisterActivity"
             android:exported="false" />
         <activity
