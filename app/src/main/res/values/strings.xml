@@ -24,5 +24,7 @@
     <string name="welcome">Welcome, \n Iqbal Tamrin</string>
     <string name="simpan_dan_lanjutkan">Simpan Dan Lanjutkan</string>
     <string name="upload_nanti">Upload Nanti</string>
+    <string name="idr">IDR 200.000</string>
+    <string name="coming_soon">COMING SOON</string>
 
 </resources>
