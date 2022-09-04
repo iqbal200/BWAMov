@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BWAMov">
         <activity
+            android:name=".ui.onboarding.OnboardingThreeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.onboarding.OnboardingTwoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.onboarding.OnboardingOneActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.splashScreen.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
