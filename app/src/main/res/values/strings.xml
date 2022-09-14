@@ -39,5 +39,21 @@
     <string name="empty">Empty</string>
     <string name="booked">Booked</string>
     <string name="selected">Selected</string>
+    <string name="bayar_sekarang">Bayar Sekarang</string>
+    <string name="batalkan">Batalkan</string>
+    <string name="checkout">Checkout</string>
+    <string name="when">When</string>
+    <string name="date_time"><![CDATA[Date & Time]]></string>
+    <string name="cinema">Cinema</string>
+    <string name="tanggal">17 Agustus 2022</string>
+    <string name="alamat_checkout">Mal XX1 Makassar,Sulsel</string>
+    <string name="time">Time</string>
+    <string name="items">Items</string>
+    <string name="idr_ticker">IDR 70.000</string>
+    <string name="nomor_kursi">Set No C2</string>
+    <string name="e_wallet">E-Wallet</string>
+    <string name="total_balance">Total Balance</string>
+    <string name="total_harga_dibayar">Total Harga Dibayar</string>
+
 
 </resources>
