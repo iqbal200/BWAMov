@@ -54,6 +54,9 @@
     <string name="e_wallet">E-Wallet</string>
     <string name="total_balance">Total Balance</string>
     <string name="total_harga_dibayar">Total Harga Dibayar</string>
+    <string name="editprofile">Edit Profile</string>
+    <string name="simpandatbaru">Simpan Data Baru</string>
+    <string name="my_wallet">My Wallet</string>
 
 
 </resources>
