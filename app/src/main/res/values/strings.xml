@@ -27,11 +27,11 @@
     <string name="idr">IDR 200.000</string>
     <string name="coming_soon">COMING SOON</string>
     <string name="avenger_invinity">Avenger: Infinity War</string>
-    <string name="action_scyi_fi_kids">Action, Sci-Fi, Kids</string>
+    <string name="action_scyi_fi_kids">Action, Sci Fi, Kids</string>
     <string name="storyboard">Storyboard</string>
     <string name="whoplayer">Who Player</string>
     <string name="pilihbangku">Pilih Bangku</string>
-    <string name="storyboard_desc">It is a long established fact that a reader will be distracted by \nthe readable content of a page when looking at its layout. \nThe point of using Lorem Ipsum is that it has a more-or-less normal \ndistribution of letters, as opposed to using 'Content here, \ncontent here', making it look like readable English.</string>
+    <string name="storyboard_desc">It is a long established fact that a reader will be distracted by \nthe readable content of a page when looking at its layout. \nThe point of using Lorem Ipsum is that it has a more-or-less normal \ndistribution of letters, as opposed to using making it look like readable English.</string>
     <string name="image">TODO</string>
     <string name="alita_beatle">Alita Beatle</string>
     <string name="pilih_bangku">Pilih Bangku</string>
@@ -43,7 +43,7 @@
     <string name="batalkan">Batalkan</string>
     <string name="checkout">Checkout</string>
     <string name="when">When</string>
-    <string name="date_time"><![CDATA[Date & Time]]></string>
+    <string name="date_time">Tanggal Dan Waktu</string>
     <string name="cinema">Cinema</string>
     <string name="tanggal">17 Agustus 2022</string>
     <string name="alamat_checkout">Mal XX1 Makassar,Sulsel</string>

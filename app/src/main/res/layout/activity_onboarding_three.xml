@@ -9,12 +9,12 @@
     tools:context=".ui.onboarding.OnboardingThreeActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_next"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/shape_rectangle_bluegrey"
         android:backgroundTint="@color/colorPink"
         android:backgroundTintMode="screen"

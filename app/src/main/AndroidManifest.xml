@@ -29,7 +29,9 @@
             android:exported="false" />
         <activity
             android:name=".ui.onboarding.OnboardingTwoActivity"
-            android:exported="false" />
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".ui.onboarding.OnboardingOneActivity"
             android:exported="false" />
