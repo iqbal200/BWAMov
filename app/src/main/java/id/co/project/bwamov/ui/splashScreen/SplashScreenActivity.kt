@@ -22,6 +22,6 @@ class SplashScreenActivity : AppCompatActivity() {
             startActivity(inten)
             finish()
 
-        },2000)
+        },1000)
     }
 }
