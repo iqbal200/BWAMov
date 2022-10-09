@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Project/BWAMov/app/src/main/res/drawable/ic_baseline_account_balance_wallet_24.xml" value="0.1" />
+        <entry key="..\:/Project/BWAMov/app/src/main/res/drawable/ic_home.xml" value="0.1" />
+        <entry key="..\:/Project/BWAMov/app/src/main/res/drawable/ic_keterangan_kursi.xml" value="0.1" />
+        <entry key="..\:/Project/BWAMov/app/src/main/res/drawable/ic_keterangan_kursi_boked.xml" value="0.1" />
+        <entry key="..\:/Project/BWAMov/app/src/main/res/drawable/shape_rectangle_bluegrey.xml" value="0.1" />
+        <entry key="..\:/Project/BWAMov/app/src/main/res/drawable/shape_rectangle_kursi.xml" value="0.1" />
+        <entry key="..\:/Project/BWAMov/app/src/main/res/drawable/shape_rectangle_kursi_selected.xml" value="0.1" />
+        <entry key="..\:/Project/BWAMov/app/src/main/res/drawable/shape_rectangle_pink.xml" value="0.1" />
+        <entry key="..\:/Project/BWAMov/app/src/main/res/layout/activity_checkout.xml" value="0.14666666666666667" />
+        <entry key="..\:/Project/BWAMov/app/src/main/res/layout/activity_edit_profile.xml" value="0.14666666666666667" />
+        <entry key="..\:/Project/BWAMov/app/src/main/res/layout/activity_home_page.xml" value="0.14666666666666667" />
+        <entry key="..\:/Project/BWAMov/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Project/BWAMov/app/src/main/res/layout/activity_main2.xml" value="0.1381340579710145" />
+        <entry key="..\:/Project/BWAMov/app/src/main/res/layout/activity_movie_detail.xml" value="0.14666666666666667" />
+        <entry key="..\:/Project/BWAMov/app/src/main/res/layout/activity_my_history.xml" value="0.14666666666666667" />
+        <entry key="..\:/Project/BWAMov/app/src/main/res/layout/activity_my_wallet.xml" value="0.22" />
+        <entry key="..\:/Project/BWAMov/app/src/main/res/layout/activity_onboarding_one.xml" value="0.1" />
+        <entry key="..\:/Project/BWAMov/app/src/main/res/layout/activity_onboarding_three.xml" value="0.1381340579710145" />
+        <entry key="..\:/Project/BWAMov/app/src/main/res/layout/activity_onboarding_two.xml" value="0.1381340579710145" />
+        <entry key="..\:/Project/BWAMov/app/src/main/res/layout/activity_pilih_bangku.xml" value="0.16666666666666666" />
+        <entry key="..\:/Project/BWAMov/app/src/main/res/layout/activity_register.xml" value="0.22" />
+        <entry key="..\:/Project/BWAMov/app/src/main/res/layout/activity_register_with_photo.xml" value="0.14130434782608695" />
+        <entry key="..\:/Project/BWAMov/app/src/main/res/layout/activity_splash_screen.xml" value="0.1381340579710145" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
