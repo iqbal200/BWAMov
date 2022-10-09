@@ -18,7 +18,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="30dp"
         android:background="@drawable/shape_rectangle_pink"
-        android:backgroundTint="#8F5151"
+        android:textColor="@color/white"
         android:text="@string/lanjutkan"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
