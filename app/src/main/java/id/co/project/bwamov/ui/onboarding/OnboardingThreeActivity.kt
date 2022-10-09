@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import id.co.project.bwamov.databinding.ActivityOnboardingThreeBinding
-import id.co.project.bwamov.ui.authentication.RegisterActivity
+import id.co.project.bwamov.ui.authentication.signin.LoginActivity
 
 class OnboardingThreeActivity : AppCompatActivity() {
 
@@ -16,7 +16,7 @@ class OnboardingThreeActivity : AppCompatActivity() {
 
         with(binding){
             buttonNext.setOnClickListener {
-                val inten = Intent(this@OnboardingThreeActivity, RegisterActivity::class.java)
+                val inten = Intent(this@OnboardingThreeActivity, LoginActivity::class.java)
                 startActivity(inten)
                 finishAffinity()
             }
