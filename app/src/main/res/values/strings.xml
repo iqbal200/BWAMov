@@ -57,6 +57,23 @@
     <string name="editprofile">Edit Profile</string>
     <string name="simpandatbaru">Simpan Data Baru</string>
     <string name="my_wallet">My Wallet</string>
+    <string name="user_not_found">User Tidak Ditemukan</string>
+    <string name="user_not_founds">dfsdfsf</string>
+    <string name="password_anda_salah">Password Anda Salah</string>
+    <string name="user_not_founded">User Tidak Ditemukan</string>
+    <string name="action">Action</string>
+    <string name="onboarding">onboarding</string>
+    <string name="status">status</string>
+    <string name="one">1</string>
+    <string name="user">User</string>
+    <string name="masukkan_username_anda">Masukkan Username Anda</string>
+    <string name="masukkan_password_anda">Masukkan Password Anda</string>
+    <string name="any">""</string>
+    <string name="login_berhasil">Login Berhasil</string>
+    <string name="url">url</string>
+    <string name="saldo">saldo</string>
+    <string name="email">email</string>
+    <string name="loading">Loading</string>
 
 
 </resources>
