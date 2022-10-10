@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:background="@color/colorBlue"
-    tools:context=".ui.authentication.RegisterActivity">
+    tools:context=".ui.authentication.register.RegisterActivity">
 
     <Button
         android:id="@+id/button"
