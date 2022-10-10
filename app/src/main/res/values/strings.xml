@@ -19,7 +19,7 @@
     <string name="nama">Nama</string>
     <string name="masukkan_nama_anda">iqbal tamrin</string>
     <string name="email_address">Email Address</string>
-    <string name="masukkan_email_anda">iqbalthamrin200@gmail.com</string>
+    <string name="masukkan_email_anda">Masukkan Email Anda</string>
     <string name="photo">Photo</string>
     <string name="welcome">Welcome, \n Iqbal Tamrin</string>
     <string name="simpan_dan_lanjutkan">Simpan Dan Lanjutkan</string>
@@ -74,6 +74,8 @@
     <string name="saldo">saldo</string>
     <string name="email">email</string>
     <string name="loading">Loading</string>
+    <string name="masukkan_nama_lengkap_anda">Masukkan Nama Lengkap Anda</string>
+    <string name="user_sudah_digunakan">User Sudah Digunakan</string>
 
 
 </resources>
