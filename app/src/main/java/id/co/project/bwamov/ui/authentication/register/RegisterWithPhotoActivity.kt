@@ -15,7 +15,7 @@ class RegisterWithPhotoActivity : AppCompatActivity() {
         binding = ActivityRegisterWithPhotoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
+// New Feature Rilis
         with(binding){
             buttonUploadNanti.setOnClickListener {
                 val intent = Intent(this@RegisterWithPhotoActivity, LoginActivity::class.java)
