@@ -16,7 +16,6 @@ import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import id.co.project.bwamov.R
 import id.co.project.bwamov.databinding.ActivityRegisterWithPhotoBinding
-import id.co.project.bwamov.ui.authentication.signin.LoginActivity
 import id.co.project.bwamov.ui.homePage.HomePageActivity
 import id.co.project.bwamov.utils.Preferences
 import java.util.*
