@@ -1,14 +1,17 @@
 package id.co.project.bwamov.ui.authentication.register
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.database.*
 import id.co.project.bwamov.R
 import id.co.project.bwamov.databinding.ActivityRegisterBinding
 import id.co.project.bwamov.ui.authentication.signin.User
 import id.co.project.bwamov.utils.dismisLoading
+import id.co.project.bwamov.utils.showLoading
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -46,6 +49,7 @@ class RegisterActivity : AppCompatActivity() {
     private fun funButtonRegister() {
         with(binding) {
             buttonRegister.setOnClickListener {
+                showLoading()
                 //Memanggil Fungsi Validasi Data EditText
                 validateDataEditText()
 
@@ -118,12 +122,8 @@ class RegisterActivity : AppCompatActivity() {
                     startActivity(goToPhotoScreenActivity)
                     finishAffinity()
                 } else {
-                    Toast.makeText(
-                        this@RegisterActivity,
-                        getString(R.string.user_sudah_digunakan),
-                        Toast.LENGTH_LONG
-                    )
-                        .show()
+                    //Memanggil Fungsi Snackbar Ketika Sudah Digunakan
+                    SnackbarUserSudahDigunakan()
                 }
             }
 
@@ -135,5 +135,19 @@ class RegisterActivity : AppCompatActivity() {
         })
 
 
+    }
+    // Membuat Fungsi Untuk Snackbar User sudah digunakan
+    private fun SnackbarUserSudahDigunakan() {
+        val snackbar =
+            Snackbar.make(
+                binding.layoutRegister,
+                getString(R.string.user_sudah_digunakan),
+                Snackbar.LENGTH_SHORT
+            )
+                .setAction(getString(R.string.action), null)
+        snackbar.setActionTextColor(Color.BLACK)
+        val snackbarview = snackbar.view
+        snackbarview.setBackgroundColor(Color.RED)
+        snackbar.show()
     }
 }
