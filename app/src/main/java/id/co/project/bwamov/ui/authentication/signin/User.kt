@@ -1,14 +1,16 @@
 package id.co.project.bwamov.ui.authentication.signin
 
-class User {
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
 
-    var email : String ?=""
-    var nama : String ?=""
-    var password : String ?=""
-    var url: String ?=""
-    var username : String ?=""
+@Parcelize
+class User (
+
+    var email : String ?="",
+    var nama : String ?="",
+    var password : String ?="",
+    var url: String ?="",
+    var username : String ?="",
     var saldo : String ?=""
 
-
-
-}
+): Parcelable
