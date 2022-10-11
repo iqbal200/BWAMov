@@ -99,14 +99,11 @@ class RegisterActivity : AppCompatActivity() {
         user.nama = ipersonname
         user.email = iemail
 
-        if (iusername != null) {
-            //Memanggil Fungsi Mengecek User name
-            checkingUsername(iusername, user)
-        }
+        checkingUsername(iusername, user)
     }
 
     //Membuat Fungsi Pengecekan User Name
-    private fun checkingUsername(checkusername: String, checkuser: User) {
+    private fun checkingUsername(checkusername: String, data: User) {
 
         mDatabaseReference.child(checkusername).addValueEventListener(object : ValueEventListener {
             override fun onDataChange(datasnapshot: DataSnapshot) {
@@ -114,13 +111,13 @@ class RegisterActivity : AppCompatActivity() {
 
                 if (user == null) {
 
-                    mDatabaseReference.child(checkusername).setValue(checkuser)
+                    mDatabaseReference.child(checkusername).setValue(data)
                     val goToPhotoScreenActivity = Intent(
                         this@RegisterActivity,
                         RegisterWithPhotoActivity::class.java
-                    ).putExtra("nama", checkuser.nama)
+                    ).putExtra("data", data)
                     startActivity(goToPhotoScreenActivity)
-                    finishAffinity()
+
                 } else {
                     //Memanggil Fungsi Snackbar Ketika Sudah Digunakan
                     SnackbarUserSudahDigunakan()
