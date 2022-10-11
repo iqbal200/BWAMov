@@ -27,7 +27,7 @@ class RegisterWithPhotoActivity : AppCompatActivity() {
     // Inialisasi variable yang akan digunakan
     var REQUEST_IMAGE_CAPTURE = 1
     var statusAdd: Boolean = false
-    lateinit var filePath: Uri
+    var filePath: Uri? = null
 
     lateinit var storage: FirebaseStorage
     lateinit var storageReferensi: StorageReference
@@ -71,7 +71,7 @@ class RegisterWithPhotoActivity : AppCompatActivity() {
                     progressDialog.show()
 
                     var ref = storageReferensi.child("image/" + UUID.randomUUID().toString())
-                    ref.putFile(filePath)
+                    ref.putFile(filePath!!)
                         .addOnSuccessListener {
                             progressDialog.dismiss()
                             Toast.makeText(
