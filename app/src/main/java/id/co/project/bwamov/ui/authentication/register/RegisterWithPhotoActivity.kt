@@ -12,10 +12,12 @@ import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.github.dhaval2404.imagepicker.ImagePicker
+import com.google.firebase.database.*
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import id.co.project.bwamov.R
 import id.co.project.bwamov.databinding.ActivityRegisterWithPhotoBinding
+import id.co.project.bwamov.ui.authentication.signin.User
 import id.co.project.bwamov.ui.homePage.HomePageActivity
 import id.co.project.bwamov.utils.Preferences
 import java.util.*
@@ -29,24 +31,33 @@ class RegisterWithPhotoActivity : AppCompatActivity() {
     var statusAdd: Boolean = false
     var filePath: Uri? = null
 
+
     lateinit var storage: FirebaseStorage
     lateinit var storageReferensi: StorageReference
     lateinit var preferences: Preferences
+
+    lateinit var user : User
+    private lateinit var mFirebaseDatabase: DatabaseReference
+    private lateinit var mFirebaseInstance: FirebaseDatabase
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRegisterWithPhotoBinding.inflate(layoutInflater)
 
+       mFirebaseInstance = FirebaseDatabase.getInstance()
+       mFirebaseDatabase = mFirebaseInstance.getReference("User")
         preferences = Preferences(this)
         storage = FirebaseStorage.getInstance()
         storageReferensi = storage.getReference()
 
         setContentView(binding.root)
-            binding.tvHello.text = "Selamat Datang \n" + intent.getStringExtra("nama")
+           user = intent.getParcelableExtra("data")!!
+            binding.tvHello.text = getString(R.string.selamat_datang) + user.nama
+            buttonBackClick()
             binding.buttonAddFoto.setOnClickListener {
                 if (statusAdd) {
                     statusAdd = false
-                    binding.buttonSave.visibility = View.VISIBLE
+                    binding.buttonSave.visibility = View.INVISIBLE
 
                     binding.buttonAddFoto.setImageResource(R.drawable.ic_add_foto)
                     binding.icProfileImage.setImageResource(R.drawable.ic_profile)
@@ -67,7 +78,6 @@ class RegisterWithPhotoActivity : AppCompatActivity() {
             binding.buttonSave.setOnClickListener {
                 if (filePath != null) {
                     var progressDialog = ProgressDialog(this)
-                    progressDialog.setTitle("Uploading...")
                     progressDialog.show()
 
                     var ref = storageReferensi.child("image/" + UUID.randomUUID().toString())
@@ -81,7 +91,8 @@ class RegisterWithPhotoActivity : AppCompatActivity() {
                             ).show()
 
                             ref.downloadUrl.addOnSuccessListener {
-                                preferences.setValue("url", it.toString())
+                                saveToFirebase(it.toString())
+
                             }
 
                             finishAffinity()
@@ -101,7 +112,7 @@ class RegisterWithPhotoActivity : AppCompatActivity() {
                         }
                         .addOnProgressListener {
                             taskSnapshot -> var progress = 100.0 * taskSnapshot.bytesTransferred/ taskSnapshot.totalByteCount
-                            progressDialog.setMessage("Upload"+progress.toInt()+ "%")
+                            progressDialog.setMessage("Uploading.." +progress.toInt()+ "%")
                         }
                 } else {
 
@@ -109,7 +120,39 @@ class RegisterWithPhotoActivity : AppCompatActivity() {
         }
 
     }
-override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+
+    private fun saveToFirebase(url: String) {
+
+        mFirebaseDatabase.child(user.username!!).addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+
+                user.url = url
+                mFirebaseDatabase.child(user.username!!).setValue(user)
+
+                preferences.setValue("nama", user.nama.toString())
+                preferences.setValue("user", user.username.toString())
+                preferences.setValue("saldo", "")
+                preferences.setValue("url", "")
+                preferences.setValue("email", user.email.toString())
+                preferences.setValue("status", "1")
+                preferences.setValue("url", url)
+
+                finishAffinity()
+                val intent = Intent(this@RegisterWithPhotoActivity,
+                   HomePageActivity::class.java)
+                startActivity(intent)
+
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                Toast.makeText(this@RegisterWithPhotoActivity, ""+error.message, Toast.LENGTH_LONG).show()
+            }
+        })
+
+
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
     super.onActivityResult(requestCode, resultCode, data)
     if (resultCode == Activity.RESULT_OK) {
         //Image Uri will not be null for RESULT_OK
@@ -131,7 +174,13 @@ override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) 
     }
 }
 
-
+    private fun buttonBackClick() {
+        binding.buttonBack.setOnClickListener {
+            Intent(this@RegisterWithPhotoActivity, RegisterActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+    }
 
     @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
