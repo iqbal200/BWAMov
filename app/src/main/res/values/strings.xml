@@ -76,6 +76,9 @@
     <string name="loading">Loading</string>
     <string name="masukkan_nama_lengkap_anda">Masukkan Nama Lengkap Anda</string>
     <string name="user_sudah_digunakan">User Sudah Digunakan</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="selamat_datang">Selamat Datang \n</string>
 
 
 </resources>
