@@ -13,4 +13,7 @@ data class Film (
     var poster: String ?="",
     var rating: String ?=""
 // new comment
+/**
+ * cek for last new updating feature
+ * **/
 ): Parcelable
